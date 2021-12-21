@@ -1,0 +1,48 @@
+.grid{
+    width:600px;
+    height:600px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    margin: auto;
+}
+.grid div{
+    width:20px;
+    height:20px;
+    background-color:green;
+}
+.grid .snake{
+    background-image: url("snake.png");
+    
+}
+.grid .apple{
+    
+    background-image: url("apple.png");
+}
+button{
+    margin: 10px;
+    background-color: green;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: greenyellow;
+    
+}
+#score{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    background-image: url(background.png);
+}
