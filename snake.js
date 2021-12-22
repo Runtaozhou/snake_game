@@ -97,21 +97,37 @@ class sound {
 // handle the key press 
 function control(e){
     
-    
-        if(e.keyCode===39){// go right when the user press the right button
-            direction =1
-        }
+    if(direction===1||direction===-1){
         if(e.keyCode===38){// go up when the user press up button
             direction =-width
-        }
-        if(e.keyCode===37){//left
-            direction =-1
         }
         if(e.keyCode===40){//down
             direction =width
         }
+    }
+    else if(direction===width||direction===-width){
+        if(e.keyCode===39){// go right when the user press the right button
+        direction =1
+        }
+        if(e.keyCode===37){//left
+            direction =-1
+        }
+    }
+    
+    // if(e.keyCode===39){// go right when the user press the right button
+    //     direction =1
+    // }
+    // if(e.keyCode===38){// go up when the user press up button
+    //     direction =-width
+    // }
+    // if(e.keyCode===37){//left
+    //     direction =-1
+    // }
+    // if(e.keyCode===40){//down
+    //     direction =width
+    // }
 
-        console.log(direction)
+    console.log(direction)
     
 }
 
